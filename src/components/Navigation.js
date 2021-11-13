@@ -1,18 +1,27 @@
-import { Link,withRouter } from "react-router-dom";
-const Navigation = () => {
+import { NavLink, withRouter } from "react-router-dom";
+import './nav.css'
+const items = [
+    {name: 'Home', to: '/', exact: true},
+    { name: 'About US', to: '/about-us' }
+]
+
+const Navigation = ({location}) => {
     return (
-        <header>
+        
         <nav>
             <ul>
-                <li>
-                    <Link to='/'>Home</Link>
-                </li>
-                <li>
-                    <Link to='/about-us'>About Us</Link>
-                </li>
+                {items.map((item) => {
+                    return (
+                        <li key={item.to}>
+                            <NavLink to={item.to} activeClassName='activelink' exact={item.exact || false}>
+                            {item.name}
+                            </NavLink>
+                    </li>
+                )})}
+               
             </ul>
         </nav>
-    </header>
+    
        );
 }
  

@@ -1,18 +1,15 @@
-import {BrowserRouter,Route}from 'react-router-dom'
+import {Route}from 'react-router-dom'
 import AboutUs from './pages/AboutUS';
 import HomePage from './pages/HomePage';
-import Navigation from './components/Navigation';
+import Layout from './Layout/Layout';
 function App() {
   return (
-   
-    <BrowserRouter>
-      <div>
-      <Navigation/>
+      <Layout>
       <Route path='/' exact={true} component={HomePage} />
       <Route path='/about-us' component={AboutUs}/>
-      </div>
+      </Layout>
       
-    </BrowserRouter>
+    
   );
 }
 
