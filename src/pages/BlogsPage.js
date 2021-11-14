@@ -13,7 +13,7 @@ const BlogsPage = () => {
             {items.map((item) => {
                 return (
                     <li key={item.to}>
-                        <Link to={item.to}>
+                        <Link to={{ pathname: item.to, search: "sort=name&age=33" }}>
                             {item.name}
                         </Link>
                     </li>

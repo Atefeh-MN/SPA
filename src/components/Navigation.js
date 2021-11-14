@@ -3,6 +3,7 @@ import './nav.css'
 const items = [
     {name: 'Home', to: '/', exact: true},
     { name: 'About US', to: '/about-us' },
+    {name:'Profile',to:'/profile'},
     { name: 'Blogs', to: '/blogs' },
     {name:'Post',to:'/post'}
 ]
