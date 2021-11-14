@@ -3,7 +3,8 @@ import './nav.css'
 const items = [
     {name: 'Home', to: '/', exact: true},
     { name: 'About US', to: '/about-us' },
-    { name: 'Blogs', to:'/blogs'}
+    { name: 'Blogs', to: '/blogs' },
+    {name:'Post',to:'/post'}
 ]
 
 const Navigation = ({location}) => {
