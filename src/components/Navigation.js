@@ -2,7 +2,8 @@ import { NavLink, withRouter } from "react-router-dom";
 import './nav.css'
 const items = [
     {name: 'Home', to: '/', exact: true},
-    { name: 'About US', to: '/about-us' }
+    { name: 'About US', to: '/about-us' },
+    { name: 'Blogs', to:'/blogs'}
 ]
 
 const Navigation = ({location}) => {
