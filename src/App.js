@@ -1,13 +1,13 @@
-import {Route}from 'react-router-dom'
-import AboutUs from './pages/AboutUS';
-import HomePage from './pages/HomePage';
+import { Route,Switch } from 'react-router-dom';
 import Layout from './Layout/Layout';
+import routes from './routes';
 function App() {
   return (
-      <Layout>
-      <Route path='/' exact={true} component={HomePage} />
-      <Route path='/about-us' component={AboutUs}/>
-      </Layout>
+    <Layout>
+      <Switch>
+        {routes.map((route) => (<Route {...route} />))}
+      </Switch>
+    </Layout>
       
     
   );

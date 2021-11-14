@@ -1,0 +1,16 @@
+{
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "prettier.alignObjectProperties": true,
+    "prettier.arrayExpand": true,
+    "prettier.breakBeforeElse": true,
+    "prettier.breakProperty": true,
+    "prettier.flattenTernaries": true,
+    "prettier.jsxBracketSameLine": true,
+    "prettier.jsxSingleQuote": true,
+    "prettier.noSpaceEmptyFn": true,
+    "prettier.spaceBeforeFunctionParen": true,
+    "path-intellisense.extensionOnImport": true,
+    "path-intellisense.autoSlashAfterDirectory": true
+}
